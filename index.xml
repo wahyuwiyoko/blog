@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wahyu Wiyoko</title>
+    <link>https://wahyuwiyoko.github.io/blog/</link>
+    <description>Recent content on Wahyu Wiyoko</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 14 Mar 2021 20:45:56 +0800</lastBuildDate><atom:link href="https://wahyuwiyoko.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello, World!</title>
+      <link>https://wahyuwiyoko.github.io/blog/posts/hello-world/</link>
+      <pubDate>Sun, 14 Mar 2021 20:45:56 +0800</pubDate>
+      
+      <guid>https://wahyuwiyoko.github.io/blog/posts/hello-world/</guid>
+      <description>Hello!
+My name is Wahyu Wiyoko. I&amp;rsquo;m a software engineering expertise student. To know more about me, visit my portfolio website.
+I made this blog for documentation and some notes, so that I don&amp;rsquo;t forget one day :D Usually, I will note a system configuration of a software or about other things and will be posted on this blog.
+I use Hugo as a SSG (Static Site Generator) and PaperMod theme on this blog.</description>
+    </item>
+    
+    <item>
+      <title>Archive</title>
+      <link>https://wahyuwiyoko.github.io/blog/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wahyuwiyoko.github.io/blog/archives/</guid>
+      <description>archives</description>
+    </item>
+    
+    <item>
+      <title>Search</title>
+      <link>https://wahyuwiyoko.github.io/blog/search/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://wahyuwiyoko.github.io/blog/search/</guid>
+      <description>search</description>
+    </item>
+    
+  </channel>
+</rss>
