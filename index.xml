@@ -5,17 +5,23 @@
     <link>https://wahyuwiyoko.github.io/blog/</link>
     <description>Recent content on Wahyu Wiyoko</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 14 Mar 2021 20:45:56 +0800</lastBuildDate><atom:link href="https://wahyuwiyoko.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 17 Mar 2021 11:21:00 +0800</lastBuildDate><atom:link href="https://wahyuwiyoko.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix Black Screen Lock in Debian</title>
+      <link>https://wahyuwiyoko.github.io/blog/posts/fix-black-screen-lock-in-debian/</link>
+      <pubDate>Wed, 17 Mar 2021 11:21:00 +0800</pubDate>
+      
+      <guid>https://wahyuwiyoko.github.io/blog/posts/fix-black-screen-lock-in-debian/</guid>
+      <description>In this post, I will tell you how to fix a black lock screen in Debian</description>
+    </item>
+    
     <item>
       <title>Hello, World!</title>
       <link>https://wahyuwiyoko.github.io/blog/posts/hello-world/</link>
       <pubDate>Sun, 14 Mar 2021 20:45:56 +0800</pubDate>
       
       <guid>https://wahyuwiyoko.github.io/blog/posts/hello-world/</guid>
-      <description>Hello!
-My name is Wahyu Wiyoko. I&amp;rsquo;m a software engineering expertise student. To know more about me, visit my portfolio website.
-I made this blog for documentation and some notes, so that I don&amp;rsquo;t forget one day :D Usually, I will note a system configuration of a software or about other things and will be posted on this blog.
-I use Hugo as a SSG (Static Site Generator) and PaperMod theme on this blog.</description>
+      <description>Little things about my blog</description>
     </item>
     
     <item>
