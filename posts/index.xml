@@ -5,14 +5,23 @@
     <link>https://wahyuwiyoko.github.io/blog/posts/</link>
     <description>Recent content in Posts on Wahyu Wiyoko</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 17 Mar 2021 11:21:00 +0800</lastBuildDate><atom:link href="https://wahyuwiyoko.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Jul 2021 19:38:47 +0800</lastBuildDate><atom:link href="https://wahyuwiyoko.github.io/blog/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix PHP Upload File Not Work in Linux</title>
+      <link>https://wahyuwiyoko.github.io/blog/posts/fix-php-upload-file-not-work-in-linux/</link>
+      <pubDate>Mon, 05 Jul 2021 19:38:47 +0800</pubDate>
+      
+      <guid>https://wahyuwiyoko.github.io/blog/posts/fix-php-upload-file-not-work-in-linux/</guid>
+      <description>Fix move_uploaded_file() PHP function not work in Linux.</description>
+    </item>
+    
     <item>
       <title>Fix Black Screen Lock in Debian</title>
       <link>https://wahyuwiyoko.github.io/blog/posts/fix-black-screen-lock-in-debian/</link>
       <pubDate>Wed, 17 Mar 2021 11:21:00 +0800</pubDate>
       
       <guid>https://wahyuwiyoko.github.io/blog/posts/fix-black-screen-lock-in-debian/</guid>
-      <description>In this post, I will tell you how to fix a black lock screen in Debian</description>
+      <description>In this post, I will tell you how to fix a black lock screen in Debian.</description>
     </item>
     
     <item>
@@ -21,7 +30,7 @@
       <pubDate>Sun, 14 Mar 2021 20:45:56 +0800</pubDate>
       
       <guid>https://wahyuwiyoko.github.io/blog/posts/hello-world/</guid>
-      <description>Little things about my blog</description>
+      <description>Little things about my blog.</description>
     </item>
     
   </channel>
