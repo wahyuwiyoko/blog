@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {{- if .Description }}
+    <meta name="description" content="{{ .Description }}">
+    {{- else }}
+    <meta name="description" content="Wahyu Wiyoko's blog for writing contents.">
+    {{- end }}
+    <link rel="icon" type="image/x-icon" href="{{ relURL "icons/favicon.ico" }}">
+    <link rel="stylesheet" href="{{ relURL "css/style.css" }}">
+    <link rel="stylesheet" href="{{ relURL "css/syntax.css" }}">
+    <title>{{ .Title }}</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="{{ relURL "" }}">Home</a>
+        <a href="{{ relURL "general" }}">General</a>
+        <a href="{{ relURL "linux" }}">Linux</a>
+        <a href="https://wahyuwiyoko.github.io">About</a>
+        <a href="https://github.com/wahyuwiyoko">GitHub</a>
+        <a href="{{ relURL "/blog/index.xml" }}">RSS</a>
+      </nav>
+    </header>
+
+    <main>
+      {{- block "main" . }} {{- end }}
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Wahyu Wiyoko</p>
+    </footer>
+  </body>
+</html>

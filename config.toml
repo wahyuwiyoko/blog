@@ -1,0 +1,8 @@
+baseURL = "https://wahyuwiyoko.github.io/blog/"
+title = "Wahyu Wiyoko"
+paginate = 5
+disableLiveReload = true
+pluralizeListTitles = false
+
+[markup.highlight]
+noClasses = false
