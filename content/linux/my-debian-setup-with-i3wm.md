@@ -18,7 +18,7 @@ firmware-linux intel-microcode network-manager bc xorg fontconfig \
 dbus-x11 xinput psmisc pipewire pipewire-audio alsa-utils xdg-utils \
 net-tools lightdm gtk2-engines gtk2-engines-murrine gtk2-engines-pixbuf \
 ntfs-3g git xwallpaper brightnessctl xclip zip libnotify-bin dunst inxi \
-lxpolkit firefox-esr htop i3
+curl lxpolkit firefox-esr htop i3
 ```
 
 Run `xdg-users-dirs-update` to generate home folders.
@@ -50,14 +50,14 @@ the [docs](https://docs.github.com/en/authentication).
 - Tmux (terminal multiplexer): `sudo apt install tmux`
 - Picom (compositor): `sudo apt install picom`
 - PostgreSQL (RDBMS): `sudo apt install postgresql`
-- [Go](https://go.dev) (Go-lang compiler)
+- [Go](https://go.dev/) (Golang compiler)
 - Lua (Lua interpreter): `sudo apt install lua5.4`
-- [Node.js](https://nodejs.org) (JS runtime)
-- [Insomnia](https://insomnia.rest) (API client)
-- [Docker](https://www.docker.com) (container manager)
-- [ONLYOFFICE](https://www.onlyoffice.com) (office suite)
-- [ngrok](https://ngrok.com) (HTTP tunnel)
-- [Hugo](https://gohugo.io) (SSG)
+- [Node.js](https://nodejs.org/) (JS runtime)
+- [Insomnia](https://insomnia.rest/) (API client)
+- [Docker](https://www.docker.com/) (container manager)
+- [ONLYOFFICE](https://www.onlyoffice.com/) (office suite)
+- [ngrok](https://ngrok.com/) (HTTP tunnel)
+- [Hugo](https://gohugo.io/) (SSG)
 - mpv (multimedia player): `sudo apt install mpv`
 - cmus (audio player): `sudo apt install cmus`
 - Flameshot (screenshoter): `sudo apt install flameshot`
@@ -90,8 +90,7 @@ Update grub: `sudo update-grub2`
 
 ## Appearance
 
-- [Rosé Pine GTK theme](https://github.com/rose-pine-gtk)
-- [Qogir icon theme](https://example.com)
+- [Rosé Pine GTK theme](https://github.com/rose-pine/gtk)
 - JetBrains Mono fonts: `sudo apt install fonts-jetbrains-mono`
 
 ## Useful Links
@@ -99,10 +98,12 @@ Update grub: `sudo update-grub2`
 - [Manage user account](https://wiki.debian.org/UserAccounts)
 - [Add user with sudo](https://wiki.debian.org/sudo)
 - [Configuring apt source](https://wiki.debian.org/SourcesList)
-- [LightDM docs](https://wiki.debian.org/LightDM)
-- [X session docs](https://wiki.debian.org/Xsession)
-- [MTP](https://wiki.debian.org/mtp)
-- [SymLink docs](https://wiki.debian.org/SymLink)
-- [Fonts docs](https://wiki.debian.org/Fonts)
+- [LightDM wiki](https://wiki.debian.org/LightDM)
+- [X session wiki](https://wiki.debian.org/Xsession)
+- [PipeWire wiki](https://wiki.debian.org/PipeWire)
+- [ALSA wiki](https://wiki.debian.org/ALSA)
+- [MTP wiki](https://wiki.debian.org/mtp)
+- [SymLink wiki](https://wiki.debian.org/SymLink)
+- [Fonts wiki](https://wiki.debian.org/Fonts)
 - [File management](https://wiki.debian.org/CommandsFileManager)
 - [Export and import GPG keys](https://wiki.debian.org/EvolutionSecurity)

@@ -9,7 +9,7 @@ Let's start with `xinput` command to know which device on our system.
 
 Here's the example output:
 
-```bash {hl_Lines="5", lineNos=inline}
+```bash {hl_Lines="5"}
 $ xinput
 ⎡ Virtual core pointer                          id=2    [master pointer  (3)]
 ⎜   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]
@@ -24,7 +24,7 @@ $ xinput
 As you can see, there's a touchpad device named `HTIX5288:00 093A:0255 Touchpad`.
 Now we can list the properties of this device by using the name or with the ID.
 
-```bash {hl_Lines="5",lineNos=inline}
+```bash {hl_Lines="5"}
 $ xinput list-props 11
 Device 'HTIX5288:00 093A:0255 Touchpad':
         Device Enabled (189):   1

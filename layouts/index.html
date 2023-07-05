@@ -1,9 +1,9 @@
 {{ define "main" }}
   <section>
+    <h2>Posts</h2>
     {{- range .Paginator.Pages }}
       <article>
-        <h2><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h2>
-        <p>{{ .Description }}</p>
+        <h3><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h3>
         <p>{{ .Date.Format "January 2, 2006" }}</p>
       </article>
     {{- end }}
