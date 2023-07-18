@@ -16,28 +16,12 @@ Install missing Linux firmware and additional package for system:
 sudo apt install build-essential dkms linux-headers-$(uname -r) \
 firmware-linux intel-microcode network-manager bc xorg fontconfig \
 dbus-x11 xinput psmisc pipewire pipewire-audio alsa-utils xdg-utils \
-net-tools lightdm gtk2-engines gtk2-engines-murrine gtk2-engines-pixbuf \
+net-tools libgtk2.0-0 gtk2-engines gtk2-engines-murrine gtk2-engines-pixbuf \
 ntfs-3g git xwallpaper brightnessctl xclip zip libnotify-bin dunst inxi \
-curl lxpolkit firefox-esr htop i3
+curl jq firefox-esr htop i3
 ```
 
 Run `xdg-users-dirs-update` to generate home folders.
-
-Configure LightDM: `/etc/lightdm/lightdm-gtk-greeter.conf`
-and `/usr/share/lightdm/lightdm.conf.d/01_debian.conf`.
-
-Example for `lightdm-gtk-greeter.conf`:
-
-```
-[greeter]
-background = picture.jpg
-theme-name = theme
-icon-theme-name = icon
-cursor-theme-name = cursor-theme-name
-hide-user-image = true
-clock-format = %I:%M %p
-indicators = ~host;~spacer;~clock;~spacer;~power
-```
 
 Add SSH and GPG keys for GitHub authentication by following
 the [docs](https://docs.github.com/en/authentication).
@@ -68,7 +52,9 @@ the [docs](https://docs.github.com/en/authentication).
 - Newsboat (RSS/atom feed reader): `sudo apt install newsboat`
 - fdfind (`find` alternative): `sudo apt install fd-find`
 - ripgrep (`grep` alternative): `sudo apt install ripgrep`
+- fzf (fuzzy finder): `sudo apt install fzf`
 - yt-dlp (video/audio downloader): `sudo apt install yt-dlp`
+- [xdg-ninja](https://github.com/b3nj5m1n/xdg-ninja) (A shell script which checks for unwanted files and directories on $HOME)
 
 ## Configure Firewall
 
@@ -90,8 +76,10 @@ Update grub: `sudo update-grub2`
 
 ## Appearance
 
-- [Rosé Pine GTK theme](https://github.com/rose-pine/gtk)
-- JetBrains Mono fonts: `sudo apt install fonts-jetbrains-mono`
+- [Rosé Pine GTK and icon theme](https://github.com/rose-pine/gtk)
+- [Catppuccin cursors](https://github.com/catppuccin/cursors)
+- Inter font: `sudo apt install fonts-inter`
+- JetBrains Mono font: `sudo apt install fonts-jetbrains-mono`
 
 ## Useful Links
 
