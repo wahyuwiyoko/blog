@@ -17,8 +17,8 @@ sudo apt install build-essential dkms linux-headers-$(uname -r) \
 firmware-linux intel-microcode network-manager bc xorg fontconfig \
 dbus-x11 xinput psmisc pipewire pipewire-audio alsa-utils xdg-utils \
 net-tools libgtk2.0-0 gtk2-engines gtk2-engines-murrine gtk2-engines-pixbuf \
-ntfs-3g git xwallpaper brightnessctl xclip zip libnotify-bin dunst inxi \
-curl jq firefox-esr htop i3
+ntfs-3g git hsetroot light udisks2 xclip zip libnotify-bin dunst inxi \
+xdotool curl jq firefox-esr i3
 ```
 
 Run `xdg-users-dirs-update` to generate home folders.
@@ -32,7 +32,6 @@ the [docs](https://docs.github.com/en/authentication).
 - nsxiv (image viewer): `sudo apt install nsxiv`
 - [Neovim](https://neovim.io/) (text editor)
 - Tmux (terminal multiplexer): `sudo apt install tmux`
-- Picom (compositor): `sudo apt install picom`
 - PostgreSQL (RDBMS): `sudo apt install postgresql`
 - [Go](https://go.dev/) (Golang compiler)
 - Lua (Lua interpreter): `sudo apt install lua5.4`
@@ -42,10 +41,11 @@ the [docs](https://docs.github.com/en/authentication).
 - [ONLYOFFICE](https://www.onlyoffice.com/) (office suite)
 - [ngrok](https://ngrok.com/) (HTTP tunnel)
 - [Hugo](https://gohugo.io/) (SSG)
+- LF (terminal file manager): `sudo apt install lf`
 - mpv (multimedia player): `sudo apt install mpv`
-- cmus (audio player): `sudo apt install cmus`
-- Flameshot (screenshoter): `sudo apt install flameshot`
-- zathura (document viewer): `sudo apt install zathura`
+- cmus (music player): `sudo apt install cmus`
+- maim (screenshoter): `sudo apt install maim`
+- zathura (PDF reader): `sudo apt install zathura`
 - UFW (firewall manager): `sudo apt install ufw`
 - jmtpfs (MTP): `sudo apt install jmptfs`
 - pass (password manager): `sudo apt install pass`
@@ -55,6 +55,10 @@ the [docs](https://docs.github.com/en/authentication).
 - fzf (fuzzy finder): `sudo apt install fzf`
 - yt-dlp (video/audio downloader): `sudo apt install yt-dlp`
 - [xdg-ninja](https://github.com/b3nj5m1n/xdg-ninja) (A shell script which checks for unwanted files and directories on $HOME)
+- [Delta](https://github.com/dandavison/delta) (A syntax-highlighting pager for Git, diff, and grep output)
+- shellcheck (lint tool for shell scripts): `sudo apt install shellcheck`
+- exiftool (read and write meta information in multimedia files): `sudo apt install libimage-exiftool-perl`
+- trash-cli (command line trashcan utility): `sudo apt trash-cli`
 
 ## Configure Firewall
 
