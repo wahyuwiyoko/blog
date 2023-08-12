@@ -5,9 +5,11 @@ date: 2023-06-27T11:46:55+08:00
 draft: false
 ---
 
-Let's start with `xinput` command to know which device on our system.
+## X11
 
-Here's the example output:
+On X11, we use `xinput` command to know which device on our system.
+
+Here is the example output:
 
 ```bash {hl_Lines="5"}
 $ xinput
@@ -21,7 +23,7 @@ $ xinput
     ↳ Power Button                              id=7    [slave  keyboard (3)]
 ```
 
-As you can see, there's a touchpad device named `HTIX5288:00 093A:0255 Touchpad`.
+As you can see, there is a touchpad device named `HTIX5288:00 093A:0255 Touchpad`.
 Now we can list the properties of this device by using the name or with the ID.
 
 ```bash {hl_Lines="5"}
@@ -37,6 +39,35 @@ Device 'HTIX5288:00 093A:0255 Touchpad':
 The property we need to change is the `libinput Tapping Enabled (346): 0`
 with value 1 (true), because it's disabled by default (0 or false).
 
-Now let's turn it on using the `xinput set-prop`:
+Now turn it on using the `xinput set-prop` command:
 
-`$ xinput set-prop 11 "libinput Tapping Enabled" 2`
+```bash
+xinput set-prop 11 "libinput Tapping Enabled" 2
+```
+
+## Wayland
+
+I do think every window manager on Wayland have different syntax in how
+they manage input devices. For example in Sway, we use `swaymsg -t get_inputs`
+to list all input devices.
+
+```bash {hl_Lines="4"}
+$ swaymsg -t get_inputs
+Input device: HTIX5288:00 093A:0255 Touchpad
+  Type: Touchpad
+  Identifier: 2362:597:HTIX5288:00_093A:0255_Touchpad
+  Product ID: 597
+  Vendor ID: 2362
+  Libinput Send Events: enabled
+```
+
+Example output above are the result of `sway-input`. To apply the input
+configuration, add to Sway configuration file in `~/.config/sway/config`.
+For example:
+
+```
+input "2362:597:HTIX5288:00_093A:0255_Touchpad" tap enabled
+```
+
+You can find more details for every available options on the `sway-input`
+manual page: `man 5 sway-input`
