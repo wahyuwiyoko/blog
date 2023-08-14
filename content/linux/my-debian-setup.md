@@ -7,8 +7,8 @@ draft: false
 
 ## Introduction
 
-I have chosen Debian for a couple reason beside using any other
-distribution like Arch, Ubuntu, or any other distribution out there.
+I have chosen Debian for several reasons over using other
+distributions such as Arch, Ubuntu, or any other distribution out there.
 
 Here is why:
 

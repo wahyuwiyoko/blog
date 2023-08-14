@@ -51,7 +51,7 @@ I do think every window manager on Wayland have different syntax in how
 they manage input devices. For example in Sway, we use `swaymsg -t get_inputs`
 to list all input devices.
 
-```bash {hl_Lines="4"}
+```bash
 $ swaymsg -t get_inputs
 Input device: HTIX5288:00 093A:0255 Touchpad
   Type: Touchpad
@@ -66,7 +66,7 @@ configuration, add to Sway configuration file in `~/.config/sway/config`.
 For example:
 
 ```
-input "2362:597:HTIX5288:00_093A:0255_Touchpad" tap enabled
+input type:touchpad tap enabled
 ```
 
 You can find more details for every available options on the `sway-input`
