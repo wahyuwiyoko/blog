@@ -71,9 +71,9 @@ Here is how:
 
 ```sh
 su -
-sudo apt update
-sudo apt upgrade
-sudo apt install sudo
+apt update
+apt upgrade
+apt install sudo
 ```
 
 After installed `sudo`, add user to `sudo` group:
