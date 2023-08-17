@@ -21,12 +21,14 @@ draft: false
 ## Others
 
 - [App Ideas Collection](https://github.com/florinpop17/app-ideas) - Application ideas which can be used to improve coding skills.
+- [DevDocs](https://devdocs.io/) - API documentation browser.
 - [Dev Resources](https://devresourc.es/) - A collaborative list of resources for developers.
 - [Every Programmer Should Know](https://github.com/mtdvio/every-programmer-should-know) - Technical things every developer should know about.
 - [free-for.dev](https://github.com/ripienaar/free-for-dev) - A list of SaaS, PaaS, and IaaS offerings that have free tiers.
 - [LinuxLinks](https://www.linuxlinks.com/) - The Linux portal site.
 - [Professional Programming](https://github.com/charlax/professional-programming) - A collection of full-stack resources.
 - [Public APIs](https://github.com/public-apis/public-apis) - A collective list of free APIs.
+- [Regex Learn](https://regexlearn.com/) - Learn Regex from zero to advanced.
 - [You Don't Need](https://github.com/you-dont-need/You-Dont-Need) - YAGNI.
 
 ## Tools
