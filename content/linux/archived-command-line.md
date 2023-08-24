@@ -5,7 +5,7 @@ date: 2023-08-22T02:21:28Z
 draft: false
 ---
 
-These are just a command line that I got and not often used but
+These are just a command line that I got and not often used, but
 it may be useful one day.
 
 ## Driver List
@@ -20,7 +20,7 @@ grep drivers $XDG_DATA_HOME/xorg/Xorg.0.log
 ## Window Properties
 
 Only work on X11. These command often used for assign a value for a
-spesific window behavior case, it can be either name
+specific window behavior case, it can be either name
 or role of the client window.
 
 ```bash
