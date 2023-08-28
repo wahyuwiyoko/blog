@@ -86,6 +86,10 @@ a {
   text-underline-offset: 5px;
 }
 
+article h3 a {
+  text-underline-offset: 7px;
+}
+
 header {
   padding: 1.5rem 0;
 }
@@ -171,6 +175,10 @@ hr.divider {
 code {
   font-family: "Inconsolata", monospace;
   font-size: 1rem;
+}
+
+.highlight {
+  margin: 18px 0;
 }
 
 .highlight, pre:not(.highlight pre) {
