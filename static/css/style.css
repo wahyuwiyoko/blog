@@ -181,6 +181,12 @@ code {
   margin: 18px 0;
 }
 
+pre {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
 .highlight, pre:not(.highlight pre) {
   overflow-x: auto;
   border: 3px solid var(--border-color);
@@ -190,13 +196,27 @@ code {
 }
 
 pre:not(.highlight pre) {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
 }
 
 code:not(.highlight code, pre code) {
   background-color: var(--code-bg-color);
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
+}
+
+.code-metadata {
+  display: flex;
+  column-gap: 1rem;
+}
+
+.code-metadata > * {
+  background-color: var(--button-color);
+  color: var(--text-color);
+  border: none;
+  padding: 0.2rem 0.5rem;
+  width: fit-content;
+  font-size: 0.8rem;
 }
 
 footer p {
