@@ -141,10 +141,14 @@ section {
   margin-block: 3rem;
 }
 
-section:not(section.content) {
+section:not(section.content, section.more) {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
+}
+
+section.more li {
+  padding: 7px 0;
 }
 
 .paginator {
@@ -226,4 +230,16 @@ footer p {
 
 .not-found {
   text-align: center;
+}
+
+@media (max-width: 640px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
+@media (min-width: 640px) {
+  .mobile-show {
+    display: none;
+  }
 }
