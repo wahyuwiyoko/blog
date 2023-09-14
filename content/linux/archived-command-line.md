@@ -80,3 +80,12 @@ Export private key:
 ```bash
 gpg --export-secret-keys --armor --output private-key.asc your-key-id
 ```
+
+## Share Files Using Web Server
+
+Start a local server and expose it online by using HTTP tunnel such as
+[ngrok](https://ngrok.com/).
+
+```bash
+cd $mydir && python3 -m http.server
+```
