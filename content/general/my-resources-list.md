@@ -22,6 +22,7 @@ draft: false
 ## Others
 
 - [App Ideas Collection](https://github.com/florinpop17/app-ideas) - Application ideas which can be used to improve coding skills.
+- [Awesome Privacy](https://github.com/pluja/awesome-privacy) - List of services and alternatives to privative services.
 - [Best websites a programmer should visit](https://github.com/sdmg15/Best-websites-a-programmer-should-visit) - Some useful websites for programmers.
 - [DevDocs](https://devdocs.io/) - API documentation browser.
 - [Dev Resources](https://devresourc.es/) - A collaborative list of resources for developers.
@@ -39,6 +40,7 @@ draft: false
 
 - [Code Beautify](https://codebeautify.org/) - Code beautify and formatter.
 - [draw.io](https://www.drawio.com/) - Diagram software and flowchart maker.
+- [MagLit](https://maglit.me/) - Privacy respecting encrypted link shortener.
 - [miniPaint](https://viliusle.github.io/miniPaint/) - Online image editor to create and edit images using HTML5 technologies.
 - [Photopea](https://www.photopea.com/) - Online photo editor.
 - [PrivateBin](https://privatebin.net/) - Minimalist and open source online pastebin.
