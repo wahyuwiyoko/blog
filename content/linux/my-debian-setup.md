@@ -91,7 +91,7 @@ I have scripts for setup that you can find in my
 
 Clone my dotfiles repository:
 
-```
+```sh
 git clone https://github.com/wahyuwiyoko/dotfiles.git
 ```
 
