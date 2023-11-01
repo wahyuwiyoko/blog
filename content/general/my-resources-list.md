@@ -1,7 +1,7 @@
 ---
 title: "My Resources List"
 description: "A collection of resources presented in curated lists."
-date: 2023-06-27T09:54:48+08:00
+date: 2023-06-27T09:54:48
 draft: false
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Archived Command Line"
 description: "Some commands that may be useful one day"
-date: 2023-08-22T02:21:28Z
+date: 2023-08-22T02:21:28
 draft: false
 ---
 
