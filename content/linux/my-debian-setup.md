@@ -18,7 +18,7 @@ I don't mind for having older packages because of stable it is. It means I
 don't need to update my packages very often and not having broken dependencies
 or [broken system](https://wiki.debian.org/DontBreakDebian).
 
-It's fixed release. It's good for me because after
+It's fixed release. Because after
 [major update](https://wiki.debian.org/DebianReleases), I can do a
 clean installation with the fresh system and have minor bugs from
 previous release.
@@ -131,7 +131,7 @@ the [documentation](https://docs.github.com/en/authentication).
 ## Software & Utilities
 
 Most of the software that I used are terminal and command line based. It's
-configurable with a config files rather than GUI software.
+customizable with a configuration file rather than GUI software.
 
 ### Terminal Emulator
 
@@ -152,7 +152,6 @@ customizable with Lua language and have tons of useful plugins.
 - [Docker](https://www.docker.com/), I'm not exploring much yet with Docker.
 - [ngrok](https://ngrok.com/) for local tunneling.
 - [Hugo](https://gohugo.io/) for this blog.
-- [Insomnia](https://insomnia.rest/), an API client.
 
 ### Multimedia Player
 
