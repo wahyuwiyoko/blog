@@ -5,13 +5,6 @@
   --border-color: #cecacd;
   --button-color: #dfdad9;
   --code-bg-color: #f2e9e1;
-
-  /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  --body-font-size: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
-  --h1-font-size: clamp(2.07rem, calc(1.84rem + 1.17vw), 2.75rem);
-  --h2-font-size: clamp(1.73rem, calc(1.56rem + 0.82vw), 2.20rem);
-  --h3-font-size: clamp(1.44rem, calc(1.33rem + 0.55vw), 1.76rem);
-  --footer-font-size: clamp(0.83rem, calc(0.81rem + 0.12vw), 0.90rem);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,22 +28,22 @@ html {
 
 body {
   margin: 0;
-  font: var(--body-font-size)/1.6 sans-serif;
+  font: 1rem/1.6 sans-serif;
   color: var(--text-color);
   background-color: var(--bg-color);
   letter-spacing: 0.04rem;
 }
 
 h1 {
-  font-size: var(--h1-font-size);
+  font-size: 2rem;
 }
 
 h2 {
-  font-size: var(--h2-font-size);
+  font-size: 1.7rem;
 }
 
 h3 {
-  font-size: var(--h3-font-size);
+  font-size: 1.4rem;
 }
 
 h1, h2, h3 {
@@ -206,7 +199,7 @@ code:not(.highlight code, pre code) {
 
 footer p {
   text-align: center;
-  font-size: var(--footer-font-size);
+  font-size: 0.8rem;
 }
 
 .not-found {
