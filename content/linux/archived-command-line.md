@@ -89,3 +89,23 @@ Start a local server and expose it online by using HTTP tunnel such as
 ```bash
 cd $mydir && python3 -m http.server
 ```
+
+## Mount/Unmount MTP Devices
+
+Require `jmtpfs` package installed. Make sure the screen unlocked and the
+directory that will be the mount point have write access.
+
+To mount device:
+
+```bash
+jmtpfs directory-name
+```
+
+To unmount device:
+
+```bash
+fusermount -u directory-name
+```
+
+Note: if you get `input/output error` output, try unmount and mount the device
+again without unplug the cable.
