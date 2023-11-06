@@ -62,10 +62,6 @@ a {
   text-underline-offset: 5px;
 }
 
-article p {
-  font-weight: 500;
-}
-
 article h3 a {
   text-underline-offset: 7px;
 }
@@ -81,7 +77,7 @@ nav {
   gap: 1.5rem 2rem;
 }
 
-nav a, .paginator a {
+nav a, article p, .paginator a {
   font-weight: 500;
 }
 
@@ -109,6 +105,10 @@ tr:nth-child(even) {
 
 ul {
   padding: 0 1.2rem;
+}
+
+ol {
+  padding: 0 1.5rem;
 }
 
 main {
@@ -202,7 +202,7 @@ code:not(.highlight code, pre code) {
   border: none;
   padding: 0.3rem 0.4rem;
   width: fit-content;
-  font: 0.8rem sans-serif;
+  font: 500 0.8rem sans-serif;
   border-radius: 3px;
 }
 
