@@ -6,8 +6,8 @@ pluralizeListTitles = false
 enableGitInfo = true
 
 [frontmatter]
-  date = ["date", "publishDate", "lastmod"]
-  lastmod = ["lastmod", ":git", "date", "publishDate"]
+date = ["date", "publishDate", "lastmod"]
+lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [markup.highlight]
-  noClasses = false
+noClasses = false
