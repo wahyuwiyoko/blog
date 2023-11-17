@@ -32,6 +32,9 @@ body {
   color: var(--text-color);
   background-color: var(--bg-color);
   letter-spacing: 0.04rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -115,6 +118,7 @@ main {
   width: min(60ch, 100% - 3rem);
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
   align-items: center;
   margin: auto;
   border-block: 1px solid var(--border-color);
