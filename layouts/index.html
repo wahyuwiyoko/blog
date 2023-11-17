@@ -9,13 +9,15 @@
     {{- end }}
   </section>
 
-  <div class="paginator">
-    {{- if .Paginator.HasPrev }}
-      <a href="{{ .Paginator.Prev.URL }}">Prev</a>
-    {{- end -}}
+  {{ if gt .Paginator.TotalPages 1 }}
+    <div class="paginator">
+      {{- if .Paginator.HasPrev }}
+        <a href="{{ .Paginator.Prev.URL }}">Prev</a>
+      {{- end -}}
 
-    {{ if .Paginator.HasNext }}
-      <a href="{{ .Paginator.Next.URL }}">Next</a>
-    {{- end }}
-  </div>
+      {{ if .Paginator.HasNext }}
+        <a href="{{ .Paginator.Next.URL }}">Next</a>
+      {{- end }}
+    </div>
+  {{ end }}
 {{- end }}
