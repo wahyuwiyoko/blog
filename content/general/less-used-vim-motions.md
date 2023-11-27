@@ -24,15 +24,39 @@ Some of the motions will be used with several modes below.
 close fold. `zd` to delete fold and `zD` to delete fold recursively. To show
 fold column, enter `:set foldcolumn=1` command.
 
+`"{character}{motion}` to yank to the register. For example `"ayaw` will yank
+"around" a word in register `"a`.
+
 `"{character} p` to paste from registers. For example, `"a p` is to paste
 register "a". To list all register, enter `:reg` or `:registers` command.
 
 `{` go to previous paragraph and `}` go to next paragraph.
 
+`f{character}` to find character forward and `F{character}` to find character
+backward in line. To repeat the `f` motion, use `;` to repeat find forward and
+`,` to repeat find backward. It can also using motion for repeating `f` like
+`3;` or `3,`.
+
 `q{character}` to record macros. For example to record macros with "a", use
 `qa` and do actions. To exit macros, use `q` again. To use the macros, do
 `{number-action}@a` will repeat macros with the number of actions. For
 example, `3@a` will do 3 times from "a" recorded macros.
+
+`>>` to indent and `<<` to unindent line.
+
+`m{character}` to mark position. For example `ma` to set the mark position. To
+go to the marked column use `` `a ``. To go to the marked line use `'a`.
+Using lowercase character will only set a marks in each own buffer. To set
+global marks, use uppercase like `mA`. To list all marks, use `:marks` command.
+
+`Ctrl+o` to jump to the older cursor position in jump list. And `Ctrl+i` to jump
+to the newer cursor position in jump list. To see all list of jump list, use
+`:jumps` command.
+
+`Ctrl+]` to jump to the definition of the keyword or to the file that has
+references under the cursor.
+
+`Shift+k` to jump to the documentation under the cursor.
 
 ## Insert Mode
 
@@ -42,6 +66,9 @@ example, `3@a` will do 3 times from "a" recorded macros.
 
 `Ctrl+o` to normal mode for a while and will go to insert mode after doing some
 motion or commands.
+
+`Ctrl+r {register}` to paste from registers. For example, to paster from
+register `"a`, use `Ctrl+r a`.
 
 ## Visual Mode
 
