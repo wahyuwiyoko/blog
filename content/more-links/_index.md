@@ -1,6 +1,6 @@
 ---
-title: "More Links"
-layout: "more-links"
+title: More Links
+layout: more-links
 hidden: true
-type: "more-links"
+type: more-links
 ---

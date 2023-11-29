@@ -1,7 +1,7 @@
 ---
-title: "My Debian Setup"
-description: "Setup and configuring Debian with window manager."
-date: 2023-08-11T10:15:33
+title: My Debian Setup
+description: Setup and configuring Debian with window manager.
+date: 2023-08-11
 draft: false
 ---
 

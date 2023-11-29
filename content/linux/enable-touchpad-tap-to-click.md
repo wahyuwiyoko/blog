@@ -1,7 +1,7 @@
 ---
-title: "Enable Touchpad Tap to Click"
-description: "Enable tap-to-click on the most window managers and desktop environments."
-date: 2023-06-27T11:46:55
+title: Enable Touchpad Tap to Click
+description: Enable tap-to-click on the most window managers and desktop environments.
+date: 2023-06-27
 draft: false
 ---
 

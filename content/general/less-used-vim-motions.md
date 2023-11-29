@@ -1,7 +1,7 @@
 ---
-title: "Less-Used Vim Motions"
-description: "Discovering some less-known Vim motions tips for faster editing."
-date: 2023-11-26T14:56:15+08:00
+title: Less-Used Vim Motions
+description: Discovering some less-known Vim motions tips for faster editing.
+date: 2023-11-26
 draft: false
 ---
 
@@ -67,7 +67,7 @@ references under the cursor.
 `Ctrl+o` to normal mode for a while and will go to insert mode after doing some
 motion or commands.
 
-`Ctrl+r {register}` to paste from registers. For example, to paster from
+`Ctrl+r {register}` to paste from registers. For example, to paste from
 register `"a`, use `Ctrl+r a`.
 
 ## Visual Mode
