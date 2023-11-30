@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ $style.Permalink }}">
     {{ $syntax := resources.Get "css/syntax.css" | minify }}
     <link rel="stylesheet" href="{{ $syntax.Permalink }}">
-    <link rel="alternate" href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" title="{{ .Site.Title }}">
+    <link rel="alternate" href="{{ relURL "index.xml" }}" type="application/rss+xml" title="{{ .Site.Title }}">
     <title>{{ .Title }}</title>
   </head>
   <body>
@@ -24,7 +24,7 @@
         <a href="{{ relURL "linux" }}">Linux</a>
         <a href="https://wahyuwiyoko.github.io/" class="mobile-hide">About</a>
         <a href="https://github.com/wahyuwiyoko" class="mobile-hide">GitHub</a>
-        <a href="{{ relURL "/blog/index.xml" }}" class="mobile-hide">RSS</a>
+        <a href="{{ relURL "index.xml" }}" class="mobile-hide">RSS</a>
         <a href="{{ relURL "more-links" }}" class="mobile-show">More</a>
       </nav>
     </header>

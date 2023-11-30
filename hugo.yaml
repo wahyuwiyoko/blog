@@ -1,4 +1,4 @@
-baseURL: https://wahyuwiyoko.github.io/blog/
+baseURL: /
 title: Wahyu Wiyoko
 paginate: 5
 disableLiveReload: true
