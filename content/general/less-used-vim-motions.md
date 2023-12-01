@@ -2,6 +2,8 @@
 title: Less-Used Vim Motions
 description: Discovering some less-known Vim motions tips for faster editing.
 date: 2023-11-26
+tags:
+  - vim
 draft: false
 ---
 

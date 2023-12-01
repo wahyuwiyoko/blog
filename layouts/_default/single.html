@@ -1,6 +1,9 @@
 {{ define "main" }}
   <section class="content">
     <h1>{{ .Title }}</h1>
+    {{ range .Params.tags }}
+      <a href="{{ relURL "tags" }}/{{ . | urlize }}">{{ . }}</a>
+    {{ end }}
     <p>Published: {{ .Date.Format "January 2, 2006"}}</p>
     <p>Last updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
     <a href="{{ site.Params.editPost.url }}{{ path.Join .File.Path }}" target="_blank">{{ site.Params.editPost.text }}</a>

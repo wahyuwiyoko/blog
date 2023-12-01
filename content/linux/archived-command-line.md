@@ -2,6 +2,9 @@
 title: Archived Command Line
 description: Some commands that may be useful one day.
 date: 2023-08-22
+tags:
+  - linux
+  - command-line
 draft: false
 ---
 

@@ -2,6 +2,9 @@
 title: Enable Touchpad Tap to Click
 description: Enable tap-to-click on the most window managers and desktop environments.
 date: 2023-06-27
+tags:
+  - linux
+  - command-line
 draft: false
 ---
 

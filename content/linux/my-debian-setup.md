@@ -2,6 +2,10 @@
 title: My Debian Setup
 description: Setup and configuring Debian with window manager.
 date: 2023-08-11
+tags:
+  - linux
+  - window-manager
+  - configuration
 draft: false
 ---
 

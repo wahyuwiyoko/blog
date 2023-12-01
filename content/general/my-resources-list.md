@@ -2,6 +2,8 @@
 title: My Resources List
 description: A collection of resources presented in curated lists.
 date: 2023-04-10
+tags:
+  - resources
 draft: false
 ---
 
