@@ -1,9 +1,10 @@
 {{ define "main" }}
   <section>
     <h2>Posts</h2>
-    {{- range .Paginator.Pages }}
+    {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "post") ".Params.hidden" "!=" true) }}
+    {{- range $paginator.Pages }}
       <article>
-        <h3><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h3>
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <p>{{ .Date.Format "January 2, 2006" }}</p>
       </article>
     {{- end }}

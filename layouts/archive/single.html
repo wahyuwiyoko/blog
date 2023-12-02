@@ -1,0 +1,27 @@
+{{ define "main" }}
+  <section>
+    <h2>{{ .Title }}</h2>
+
+    {{- range (.Site.RegularPages.GroupByDate "2006") -}}
+      {{- $posts := (where .Pages "Type" "post") -}}
+      {{- $posts_count := len $posts -}}
+
+      <article>
+        {{ if and (gt .Key 1) (gt $posts_count 0) }}
+          <h3>{{ .Key }}</h3>
+          <ul>
+            {{ range $posts }}
+              {{ if (ne .Params.hidden true) }}
+                <li>
+                  {{ .Date.Format "Jan 02" }}
+                  -
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        {{ end }}
+      </article>
+    {{ end }}
+  </section>
+{{ end }}
