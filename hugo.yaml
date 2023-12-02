@@ -10,6 +10,9 @@ params:
     url: https://github.com/wahyuwiyoko/blog/tree/main/content/
     text: Suggest Changes
 
+taxonomies:
+  tag: tags
+
 frontmatter:
   date:
     - date
