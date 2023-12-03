@@ -17,6 +17,7 @@ draft: false
 - [Boxicons](https://boxicons.com/) - High quality web friendly icons.
 - [Feather](https://feathericons.com/) - Simply beautiful open source icons.
 - [Iconify](https://iconify.design/) - All popular icon sets, one framework.
+- [Lucide](https://lucide.dev/) - Beautiful & consistent icon toolkit made by the community.
 - [Simple Icons](https://simpleicons.org/) - SVG icons for popular brands.
 - [Tabler Icons](https://tabler-icons.io/) - Free and open source SVG icons.
 - [UXWing](https://uxwing.com/) - Free icons SVG & PNG with no attribution.

@@ -20,7 +20,11 @@ Some of the motions will be used with several modes below.
 
 `Ctrl+w Shift+{h,j,k,l}` to change window position.
 
-`Ctrl+^` to alternate between buffer.
+`Ctrl+6` to alternate between buffer.
+
+`{bufnr} Ctrl+6` to switch buffer with buffer number. Use `:ls` command to list
+all available buffers. And to switch the buffer, use the buffer number for
+example, `5 Ctrl+6`.
 
 `zf` to fold code. `zo` to open and `zc` to close fold. `za` to toggle open and
 close fold. `zd` to delete fold and `zD` to delete fold recursively. To show
@@ -37,7 +41,8 @@ register "a". To list all register, enter `:reg` or `:registers` command.
 `f{character}` to find character forward and `F{character}` to find character
 backward in line. To repeat the `f` motion, use `;` to repeat find forward and
 `,` to repeat find backward. It can also using motion for repeating `f` like
-`3;` or `3,`.
+`3;` or `3,`. It's also the same for `t{character}` but the cursor will be the
+behind of the character.
 
 `q{character}` to record macros. For example to record macros with "a", use
 `qa` and do actions. To exit macros, use `q` again. To use the macros, do
@@ -50,6 +55,7 @@ example, `3@a` will do 3 times from "a" recorded macros.
 go to the marked column use `` `a ``. To go to the marked line use `'a`.
 Using lowercase character will only set a marks in each own buffer. To set
 global marks, use uppercase like `mA`. To list all marks, use `:marks` command.
+For more details, see `:help mark-motions`.
 
 `Ctrl+o` to jump to the older cursor position in jump list. And `Ctrl+i` to jump
 to the newer cursor position in jump list. To see all list of jump list, use
@@ -59,6 +65,11 @@ to the newer cursor position in jump list. To see all list of jump list, use
 references under the cursor.
 
 `Shift+k` to jump to the documentation under the cursor.
+
+`@:` to repeat previous command.
+
+`{num}i{char}<Esc>` to repeat characters. For example to repeat character 10
+times, use `10ihello<Esc>` will result `hello` 10 times.
 
 ## Insert Mode
 
@@ -88,6 +99,16 @@ replace all within the block, use `Shift+semicolon s/old-char/new-char/g`.
 
 ## Command Mode
 
+`:vsplit +b{bufnr}`, `:vsplit #{bufnr}`, `:vert sb {bufnr}` to split buffer in
+vertical split by buffer number, same as horizontal split using `:split` or
+`:horizontal`. For example, `:vsplit +b5` to split buffer vertically at buffer
+number 5. Use `:ls` or `:buffers` to show all available buffers.
+
+`:bdelete {bufnr}` to delete a buffer. For example, `:bdelete 5` will delete a
+buffer at number 5.
+
+`:windo diffthis` to show a diff between two split window.
+
 `:sort` to sort numbers or characters.
 
 `:vim` or `:vimgrep` to add a matched pattern that used for quickfix list.
@@ -110,3 +131,7 @@ enter `fg` in terminal.
 ## References
 
 - [Learn Vim the Smart Way](https://learnvim.irian.to/)
+- [jdhao's digital space](https://jdhao.github.io/)
+- [Neovim documentation](https://neovim.io/doc/)
+- [Andrew Courter's YouTube channel](https://www.youtube.com/@ascourter)
+- [Nir Lichtman's YouTube channel](https://www.youtube.com/@nirlichtman)
