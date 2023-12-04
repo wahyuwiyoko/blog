@@ -188,8 +188,6 @@ pre:not(.highlight pre) {
   overflow-x: auto;
   border: 3px solid var(--border-color);
   border-radius: 5px;
-  background-color: #191724;
-  color: #e0def4;
 }
 
 pre:not(.highlight pre) {
