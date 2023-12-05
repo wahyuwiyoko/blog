@@ -24,7 +24,8 @@ Some of the motions will be used with several modes below.
 
 `{bufnr} Ctrl+6` to switch buffer with buffer number. Use `:ls` command to list
 all available buffers. And to switch the buffer, use the buffer number for
-example, `5 Ctrl+6`.
+example, `5 Ctrl+6`. The simpler way is using `<Tab>` with `:b` command, for
+example `:b <Tab>` after pressing tab, it will give a buffers completion.
 
 `zf` to fold code. `zo` to open and `zc` to close fold. `za` to toggle open and
 close fold. `zd` to delete fold and `zD` to delete fold recursively. To show
@@ -68,8 +69,14 @@ references under the cursor.
 
 `@:` to repeat previous command.
 
-`{num}i{char}<Esc>` to repeat characters. For example to repeat character 10
+`{num}i{char}<Esc>` to repeat characters. For example, to repeat character 10
 times, use `10ihello<Esc>` will result `hello` 10 times.
+
+`[{surrounding}` to go surrounding brackets. For example, `[{` will go to the
+opening surrounding and `]}` go to the closing surrounding.
+
+`gf` to go to the file under cursor. And `Ctrl+w f` will open the file under
+cursor in new window.
 
 ## Insert Mode
 
