@@ -14,7 +14,7 @@ On X11, we use `xinput` command to know which device on our system.
 
 Here is the example output:
 
-```bash {hl_Lines="5"}
+```sh {hl_Lines="5"}
 $ xinput
 ⎡ Virtual core pointer                          id=2    [master pointer  (3)]
 ⎜   ↳ Virtual core XTEST pointer                id=4    [slave  pointer  (2)]
@@ -29,7 +29,7 @@ $ xinput
 As you can see, there is a touchpad device named `HTIX5288:00 093A:0255 Touchpad`.
 Now we can list the properties of this device by using the name or with the ID.
 
-```bash {hl_Lines="5"}
+```sh {hl_Lines="5"}
 $ xinput list-props 11
 Device 'HTIX5288:00 093A:0255 Touchpad':
         Device Enabled (189):   1
@@ -44,7 +44,7 @@ with value 1 (true), because it's disabled by default (0 or false).
 
 Now turn it on using the `xinput set-prop` command:
 
-```bash
+```sh
 xinput set-prop 11 "libinput Tapping Enabled" 2
 ```
 
@@ -54,7 +54,7 @@ I do think every window manager on Wayland have different syntax in how
 they manage input devices. For example in Sway, we use `swaymsg -t get_inputs`
 to list all input devices.
 
-```bash
+```sh
 $ swaymsg -t get_inputs
 Input device: HTIX5288:00 093A:0255 Touchpad
   Type: Touchpad
@@ -68,7 +68,7 @@ Example output above are the result of `sway-input`. To apply the input
 configuration, add to Sway configuration file in `~/.config/sway/config`.
 For example:
 
-```
+```swayconfig
 input type:touchpad tap enabled
 ```
 

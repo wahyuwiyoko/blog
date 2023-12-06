@@ -16,7 +16,7 @@ it may be useful one day.
 Only work on X11. X11 store all initial boot log in
 `$HOME/.local/share/xorg`.
 
-```bash
+```sh
 grep drivers $XDG_DATA_HOME/xorg/Xorg.0.log
 ```
 
@@ -26,11 +26,11 @@ Only work on X11. These command often used for assign a value for a
 specific window behavior case, it can be either name
 or role of the client window.
 
-```bash
+```sh
 xprop | grep WM_CLASS
 ```
 
-```bash
+```sh
 xprop | grep WM_WINDOW_ROLE
 ```
 
@@ -40,7 +40,7 @@ Only work on X11. Just to simplify the `xev` output.
 
 If you are using Wayland, use `wev` instead.
 
-```bash
+```sh
 xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \([0-9]*\).* (.*, \(.*\)).*$/\1 \2/p'
 ```
 
@@ -48,19 +48,19 @@ xev | grep -A2 --line-buffered '^KeyRelease' | sed -n '/keycode /s/^.*keycode \(
 
 To list all fonts:
 
-```bash
+```sh
 fc-list : family style
 ```
 
 To clean the fonts cache with verbose output:
 
-```bash
+```sh
 fc-cache -fv
 ```
 
 To search a font:
 
-```bash
+```sh
 fc-list | grep my-font
 ```
 
@@ -68,19 +68,19 @@ fc-list | grep my-font
 
 List all key:
 
-```bash
+```sh
 gpg --list-secret-keys --keyid-format=long
 ```
 
 Export public key:
 
-```bash
+```sh
 gpg --export --armor --output public-key.asc your-key-id
 ```
 
 Export private key:
 
-```bash
+```sh
 gpg --export-secret-keys --armor --output private-key.asc your-key-id
 ```
 
@@ -89,7 +89,7 @@ gpg --export-secret-keys --armor --output private-key.asc your-key-id
 Start a local server and expose it online by using HTTP tunnel such as
 [ngrok](https://ngrok.com/).
 
-```bash
+```sh
 cd $mydir && python3 -m http.server
 ```
 
@@ -100,13 +100,13 @@ directory that will be the mount point have write access.
 
 To mount device:
 
-```bash
+```sh
 jmtpfs directory-name
 ```
 
 To unmount device:
 
-```bash
+```sh
 fusermount -u directory-name
 ```
 
