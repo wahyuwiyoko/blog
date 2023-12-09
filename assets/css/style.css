@@ -200,6 +200,10 @@ code:not(.highlight code, pre code) {
   border-radius: 3px;
 }
 
+.copy-code {
+  cursor: pointer;
+}
+
 .code-metadata {
   display: flex;
   column-gap: 1rem;
