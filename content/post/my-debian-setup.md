@@ -6,6 +6,7 @@ tags:
   - linux
   - window-manager
   - configuration
+toc: true
 draft: false
 ---
 

@@ -5,6 +5,7 @@ date: 2023-08-22
 tags:
   - linux
   - command-line
+toc: true
 draft: false
 ---
 

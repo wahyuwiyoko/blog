@@ -5,6 +5,7 @@
   --border-color: #cecacd;
   --button-color: #dfdad9;
   --code-bg-color: #f2e9e1;
+  --card-bg-color: #fffaf3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -15,6 +16,7 @@
     --border-color: #524f67;
     --button-color: #403d52;
     --code-bg-color: #26233a;
+    --card-bg-color: #1f1d2e;
   }
 
   img {
@@ -76,7 +78,7 @@ header {
   padding: 1.5rem 0;
 }
 
-nav {
+nav:not(#TableOfContents) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -158,6 +160,17 @@ section.more li {
   background-color: var(--button-color);
   color: var(--text-color);
   border-radius: 5px;
+}
+
+details {
+  border: 3px solid var(--border-color);
+  background-color: var(--card-bg-color);
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+summary {
+  cursor: pointer;
 }
 
 hr {

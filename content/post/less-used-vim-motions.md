@@ -4,6 +4,7 @@ description: Discovering some less-known Vim motions tips for faster editing.
 date: 2023-11-26
 tags:
   - vim
+toc: true
 draft: false
 ---
 
