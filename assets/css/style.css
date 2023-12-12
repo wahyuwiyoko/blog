@@ -74,6 +74,21 @@ article h3 a {
   text-underline-offset: 7px;
 }
 
+article.tags {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+article.tags a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem 1rem 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg-color);
+  border-radius: 5px;
+}
+
 header {
   padding: 1.5rem 0;
 }
@@ -145,6 +160,19 @@ section:not(section.content, section.more) {
 
 section.more li {
   padding: 0.5rem 0;
+}
+
+.content .tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.content .tags a {
+  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg-color);
+  border-radius: 5px;
 }
 
 .paginator {
