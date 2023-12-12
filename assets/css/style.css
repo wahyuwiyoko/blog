@@ -85,7 +85,7 @@ nav:not(#TableOfContents) {
   gap: 1.5rem 2rem;
 }
 
-nav a,
+nav:not(#TableOfContents) a,
 article p,
 .paginator a {
   font-weight: 500;
