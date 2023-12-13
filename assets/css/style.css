@@ -84,7 +84,7 @@ article.tags a {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.5rem 1rem 1rem 1rem;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   background-color: var(--card-bg-color);
   border-radius: 5px;
 }
@@ -170,7 +170,7 @@ section.more li {
 
 .content .tags a {
   padding: 0.2rem 0.5rem 0.5rem 0.5rem;
-  border: 1px solid var(--border-color);
+  border: 2px solid var(--border-color);
   background-color: var(--card-bg-color);
   border-radius: 5px;
 }
@@ -191,7 +191,7 @@ section.more li {
 }
 
 details {
-  border: 3px solid var(--border-color);
+  border: 2px solid var(--border-color);
   background-color: var(--card-bg-color);
   border-radius: 5px;
   padding: 1rem;
@@ -227,7 +227,7 @@ pre {
 .highlight,
 pre:not(.highlight pre) {
   overflow-x: auto;
-  border: 3px solid var(--border-color);
+  border: 2px solid var(--border-color);
   border-radius: 5px;
 }
 
