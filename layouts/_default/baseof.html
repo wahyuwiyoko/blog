@@ -22,6 +22,7 @@
         <a href="{{ relURL "" }}">Home</a>
         <a href="{{ relURL "tags" }}">Tags</a>
         <a href="{{ relURL "archive" }}">Archive</a>
+        <a href="{{ relURL "search" }}" class="mobile-hide">Search</a>
         <a href="https://wahyuwiyoko.github.io/" class="mobile-hide">About</a>
         <a href="https://github.com/wahyuwiyoko" class="mobile-hide">GitHub</a>
         <a href="{{ relURL "index.xml" }}" class="mobile-hide">RSS</a>
@@ -38,5 +39,9 @@
     </footer>
   </body>
   {{ $script := resources.Get "js/script.js" | minify }}
+  {{ $opts := dict
+     "params" (dict "baseUrl" (absURL ""))
+  }}
+  {{ $script = $script | js.Build $opts }}
   <script src="{{ $script.Permalink }}"></script>
 </html>

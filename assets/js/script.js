@@ -1,3 +1,5 @@
+import params from "@params";
+
 const codeBlocks = document.querySelectorAll("code[class^='language-'], pre code");
 
 function copyCode(codeBlock) {
@@ -37,4 +39,12 @@ codeBlocks.forEach(codeBlock => {
   }
 
   codeBlock.parentNode.insertBefore(codeMetadata, codeBlock);
+});
+
+const inputElement = document.getElementById("search-input");
+const linkElement = document.getElementById("generated-link");
+const siteQuery = `https://duckduckgo.com/?q=${encodeURIComponent("site:" + params.baseUrl)}`;
+
+inputElement.addEventListener("keyup", () => {
+  linkElement.href = `${siteQuery}+${encodeURIComponent(inputElement.value)}`;
 });
