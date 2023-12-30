@@ -39,9 +39,5 @@
     </footer>
   </body>
   {{ $script := resources.Get "js/script.js" | minify }}
-  {{ $opts := dict
-     "params" (dict "baseUrl" (absURL ""))
-  }}
-  {{ $script = $script | js.Build $opts }}
   <script src="{{ $script.Permalink }}"></script>
 </html>

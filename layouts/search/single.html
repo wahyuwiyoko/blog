@@ -7,4 +7,11 @@
       <a target="_blank" id="generated-link">Search</a>
     </article>
   </section>
+
+  {{ $script := resources.Get "js/search.js" | minify }}
+  {{ $opts := dict
+    "params" (dict "baseUrl" (absURL ""))
+  }}
+  {{ $script = $script | js.Build $opts }}
+  <script src="{{ $script.Permalink }}"></script>
 {{ end }}
