@@ -1,22 +1,20 @@
 :root {
-  --bg-color: #faf3eb;
-  --text-color: #3b3852;
-  --link-color: #443653;
-  --border-color: #cecacd;
-  --button-color: #dfdad9;
-  --code-bg-color: #f2e9e1;
-  --card-bg-color: #fffaf3;
+  --background: #faf4ed;
+  --text: #3b3852;
+  --primary: #fffaf3;
+  --secondary: #f2e9e1;
+  --accent: #183f4e;
+  --outline: #cecacd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #191724;
-    --text-color: #e0def4;
-    --link-color: #d1bbec;
-    --border-color: #524f67;
-    --button-color: #403d52;
-    --code-bg-color: #26233a;
-    --card-bg-color: #1f1d2e;
+    --background: #191724;
+    --text: #e0def4;
+    --primary: #1f1d2e;
+    --secondary: #26233a;
+    --accent: #a0cdde;
+    --outline: #524f67;
   }
 
   img {
@@ -31,8 +29,8 @@ html {
 body {
   margin: 0;
   font: 1rem/1.6 sans-serif;
-  color: var(--text-color);
-  background-color: var(--bg-color);
+  color: var(--text);
+  background-color: var(--background);
   letter-spacing: 0.04rem;
   height: 100vh;
   display: flex;
@@ -65,7 +63,7 @@ h3[id] {
 }
 
 a {
-  color: var(--link-color);
+  color: var(--accent);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
 }
@@ -84,8 +82,8 @@ article.tags a {
   font-size: 1.1rem;
   font-weight: 500;
   padding: 0.5rem 1rem 1rem 1rem;
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
   border-radius: 5px;
 }
 
@@ -97,8 +95,8 @@ article.search {
 }
 
 article.search input {
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
   padding: 0.5rem;
   border-radius: 5px;
   outline: none;
@@ -106,8 +104,8 @@ article.search input {
 
 article.search a {
   font-size: 1rem;
-  color: var(--text-color);
-  border: 2px solid var(--border-color);
+  color: var(--text);
+  border: 2px solid var(--outline);
   padding: 0 1rem;
   border-radius: 5px;
   text-decoration: none;
@@ -145,12 +143,12 @@ table {
 
 td,
 th {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--outline);
   padding: 0.5rem 1.5rem;
 }
 
 tr:nth-child(even) {
-  background-color: var(--button-color);
+  background-color: var(--secondary);
 }
 
 ul {
@@ -168,7 +166,7 @@ main {
   flex-grow: 1;
   align-items: center;
   margin: auto;
-  border-block: 1px solid var(--border-color);
+  border-block: 1px solid var(--outline);
 }
 
 section {
@@ -194,8 +192,8 @@ section.more li {
 
 .content .tags a {
   padding: 0.2rem 0.5rem 0.5rem 0.5rem;
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
   border-radius: 5px;
 }
 
@@ -209,14 +207,14 @@ section.more li {
 .paginator a {
   text-decoration: none;
   padding: 0.6rem 1.2rem;
-  background-color: var(--button-color);
-  color: var(--text-color);
+  background-color: var(--secondary);
+  color: var(--text);
   border-radius: 5px;
 }
 
 details {
-  border: 2px solid var(--border-color);
-  background-color: var(--card-bg-color);
+  border: 2px solid var(--outline);
+  background-color: var(--primary);
   border-radius: 5px;
   padding: 1rem;
 }
@@ -226,7 +224,7 @@ summary {
 }
 
 hr {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--outline);
   margin-block: 2.5rem;
 }
 
@@ -251,7 +249,7 @@ pre {
 .highlight,
 pre:not(.highlight pre) {
   overflow-x: auto;
-  border: 2px solid var(--border-color);
+  border: 2px solid var(--outline);
   border-radius: 5px;
 }
 
@@ -260,7 +258,7 @@ pre:not(.highlight pre) {
 }
 
 code:not(.highlight code, pre code) {
-  background-color: var(--code-bg-color);
+  background-color: var(--secondary);
   padding: 0.1rem 0.3rem;
   border-radius: 3px;
 }
@@ -275,8 +273,8 @@ code:not(.highlight code, pre code) {
 }
 
 .code-metadata > * {
-  background-color: var(--button-color);
-  color: var(--text-color);
+  background-color: var(--secondary);
+  color: var(--text);
   border: none;
   padding: 0.3rem 0.4rem;
   width: fit-content;

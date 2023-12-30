@@ -2,15 +2,15 @@
   <section>
     <h2>Posts</h2>
     {{ $paginator := .Paginate (where (where .Site.RegularPages "Type" "post") ".Params.hidden" "!=" true) }}
-    {{- range $paginator.Pages }}
+    {{- range $paginator.Pages -}}
       <article>
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <p>{{ .Date.Format "January 2, 2006" }}</p>
       </article>
-    {{- end }}
+    {{ end -}}
   </section>
 
-  {{ if gt .Paginator.TotalPages 1 }}
+  {{- if gt .Paginator.TotalPages 1 }}
     <div class="paginator">
       {{- if .Paginator.HasPrev }}
         <a href="{{ .Paginator.Prev.URL }}">Prev</a>
@@ -21,4 +21,4 @@
       {{- end }}
     </div>
   {{ end }}
-{{- end }}
+{{ end }}
