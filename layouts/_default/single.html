@@ -4,23 +4,23 @@
     <p>{{ .Description }}</p>
     <p>Published: {{ .Date.Format "January 2, 2006"}}</p>
     <p>Last updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
-    {{ if .Params.tags }}
+    {{- if .Params.tags }}
       <div class="tags">
-        {{ range .Params.tags }}
+        {{- range .Params.tags }}
           <a href="{{ relURL "tags" }}/{{ . | urlize }}">{{ . }}</a>
-        {{ end }}
+        {{- end }}
       </div>
       <br>
-    {{ end }}
+    {{ end -}}
     <a href="{{ site.Params.editPost.url }}{{ path.Join .File.Path }}" target="_blank">{{ site.Params.editPost.text }}</a>
-    {{ if .Params.toc }}
+    {{- if .Params.toc }}
       <br><br>
       <details>
         <summary>Table of Contents</summary>
         {{ .TableOfContents }}
       </details>
-    {{ end }}
+    {{- end }}
     <hr class="divider">
     {{ .Content -}}
   </section>
-{{- end }}
+{{ end }}

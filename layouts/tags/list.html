@@ -2,9 +2,9 @@
   <section>
     <h2>{{ .Title }}</h2>
       <article class="tags">
-        {{ range .Site.Taxonomies.tags }}
+        {{- range .Site.Taxonomies.tags }}
           <a href="{{ .Page.Permalink }}">{{ .Page.Title }} [{{ .Count }}]</a>
-        {{ end }}
+        {{- end }}
       </article>
   </section>
-{{- end }}
+{{ end }}

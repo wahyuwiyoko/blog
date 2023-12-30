@@ -9,9 +9,9 @@
     <meta name="description" content="Wahyu Wiyoko's blog for writing contents.">
     {{- end }}
     <link rel="icon" type="image/x-icon" href="{{ relURL "icons/favicon.ico" }}">
-    {{ $style := resources.Get "css/style.css" | minify }}
+    {{- $style := resources.Get "css/style.css" | minify }}
     <link rel="stylesheet" href="{{ $style.Permalink }}">
-    {{ $syntax := resources.Get "css/syntax.css" | minify }}
+    {{- $syntax := resources.Get "css/syntax.css" | minify }}
     <link rel="stylesheet" href="{{ $syntax.Permalink }}">
     <link rel="alternate" href="{{ relURL "index.xml" }}" type="application/rss+xml" title="{{ .Site.Title }}">
     <title>{{ .Title }}</title>
@@ -31,13 +31,13 @@
     </header>
 
     <main>
-      {{- block "main" . }} {{- end }}
+      {{- block "main" . }} {{- end -}}
     </main>
 
     <footer>
       <p>&copy; 2023 Wahyu Wiyoko</p>
     </footer>
   </body>
-  {{ $script := resources.Get "js/script.js" | minify }}
+  {{- $script := resources.Get "js/script.js" | minify }}
   <script src="{{ $script.Permalink }}"></script>
 </html>
