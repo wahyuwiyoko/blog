@@ -38,7 +38,7 @@ Making desktop simple, minimal, and no distraction was my goal, and ended up
 with customize keyboard shortcuts for easier to navigate with Xfce. Xfce was my
 favorite desktop environment, ever.
 
-![Debian with Xfce desktop](/images/debian-xfce.png "Debian Xfce")
+![Debian with Xfce desktop](../../images/debian-xfce.png "Debian Xfce")
 
 ## Lazy and Boring Way
 
@@ -63,7 +63,7 @@ understanding i3 and reading the
 [documentation](https://i3wm.org/docs/userguide.html). And also with the basic
 desktop rice that still not completed.
 
-![Debian with i3 and active window](/images/debian-i3-window.png "Debian i3")
+![Debian with i3 and active window](../../images/debian-i3-window.png "Debian i3")
 
 Color schemes, icons, and window configuration, all those things took me very
 much time to make it "perfect" desktop. But ended up with unconsistency within
@@ -72,7 +72,7 @@ the color scheme for status bar, window, and terminal.
 These is my first desktop rice with i3, most of color scheme I used that day
 was [Dracula](https://draculatheme.com/) and [Decay](https://github.com/decaycs).
 
-![Debian with i3 window manager](/images/debian-i3.png "Debian i3")
+![Debian with i3 window manager](../../images/debian-i3.png "Debian i3")
 
 ## Much Simpler
 
@@ -93,7 +93,7 @@ set wallpaper and configure monitors with `output` command (in X11 need
 few, you can check more of them at
 [Sway documentation](https://github.com/swaywm/sway/wiki).
 
-![Debian with Sway window manager](/images/debian-sway.png "Debian Sway")
+![Debian with Sway window manager](../../images/debian-sway.png "Debian Sway")
 
 ## Conclusion
 
