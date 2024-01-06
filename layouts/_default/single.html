@@ -3,7 +3,7 @@
     <h1>{{ .Title }}</h1>
     <p>{{ .Description }}</p>
     <p>Published: {{ .Date.Format "January 2, 2006"}}</p>
-    <p>Last updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
+    <p>Updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
     {{- if .Params.tags }}
       <div class="tags">
         {{- range .Params.tags }}
