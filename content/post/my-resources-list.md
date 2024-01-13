@@ -16,7 +16,6 @@ draft: false
 ## Icons
 
 - [Boxicons](https://boxicons.com/) - High quality web friendly icons.
-- [Feather](https://feathericons.com/) - Simply beautiful open source icons.
 - [Iconify](https://iconify.design/) - All popular icon sets, one framework.
 - [Lucide](https://lucide.dev/) - Beautiful & consistent icon toolkit made by the community.
 - [Simple Icons](https://simpleicons.org/) - SVG icons for popular brands.
@@ -33,14 +32,12 @@ draft: false
 - [Free programming books](https://github.com/EbookFoundation/free-programming-books) - List of free learning resources in many languages.
 - [Learn X in Y minutes](https://learnxinyminutes.com/).
 - [LinuxLinks](https://www.linuxlinks.com/) - The Linux portal site.
-- [Public APIs](https://github.com/public-apis/public-apis) - A collective list of free APIs.
 - [Regex Learn](https://regexlearn.com/) - Learn Regex from zero to advanced.
 - [You Don't Need](https://github.com/you-dont-need/You-Dont-Need) - YAGNI.
 
 ## Tools
 
 - [Code Beautify](https://codebeautify.org/) - Code beautify and formatter.
-- [draw.io](https://www.drawio.com/) - Diagram software and flowchart maker.
 - [MagLit](https://maglit.me/) - Privacy respecting encrypted link shortener.
 - [PrivateBin](https://privatebin.net/) - Minimalist and open source online pastebin.
 - [Realtime Colors](https://realtimecolors.com/) - Visualize colors on a real website.

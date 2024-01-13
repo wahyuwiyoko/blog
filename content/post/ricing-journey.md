@@ -9,7 +9,7 @@ toc: false
 draft: false
 ---
 
-## First Road
+## Beginning
 
 It started when I was using Linux since around 2018 - 2019. Back in the day, I
 was exploring how much Linux offers me to customize everything, from
@@ -40,7 +40,7 @@ favorite desktop environment, ever.
 
 ![Debian with Xfce desktop](../../images/debian-xfce.png "Debian Xfce")
 
-## Lazy and Boring Way
+## Boring Way
 
 I was happy with my setup, and never looked back to other desktop environment.
 But when I saw someone's desktop, how they can have a desktop with just a
@@ -74,7 +74,7 @@ was [Dracula](https://draculatheme.com/) and [Decay](https://github.com/decaycs)
 
 ![Debian with i3 window manager](../../images/debian-i3.png "Debian i3")
 
-## Much Simpler
+## Simpler Way
 
 2023 was the year when Wayland came hype to Linux desktop. Especially
 Hyprland and Sway window manager. Hyprland looks really cool with their
