@@ -153,9 +153,10 @@ customizable with Lua language and have tons of useful plugins.
 - [PostgreSQL](https://www.postgresql.org/), a database for many applications.
 - [Go](https://go.dev/), I may be want to create a command line program with Go.
 - [Lua](https://www.lua.org/), just for configure my Neovim.
-- [Node.js](https://nodejs.org/) for JavaScript.
+- [Bun](https://bun.sh/) for JavaScript.
 - [Docker](https://www.docker.com/), I'm not exploring much yet with Docker.
 - [ngrok](https://ngrok.com/) for local tunneling.
+- [Hurl](https://hurl.dev/) for API client.
 - [Hugo](https://gohugo.io/) for this blog.
 
 ### Multimedia Player
