@@ -79,6 +79,13 @@ opening surrounding and `]}` go to the closing surrounding.
 `gf` to go to the file under cursor. And `Ctrl+w f` will open the file under
 cursor in new window.
 
+`z=` to give a word suggestion under the cursor for spelling.
+
+`]s` to go to the next misspelled word. `[s` to go to the previous misspelled
+word.
+
+`zg` to add word under the cursor as a good word in `spellfile`.
+
 ## Insert Mode
 
 `Ctrl+w` to delete single word from behind cursor.
@@ -106,6 +113,9 @@ decrement.
 replace all within the block, use `Shift+semicolon s/old-char/new-char/g`.
 
 ## Command Mode
+
+`:g/char/d` to delete a characters globally. For example , `:g/show/d` will
+delete all `show` word in the buffer.
 
 `:vsplit +b{bufnr}`, `:vsplit #{bufnr}`, `:vert sb {bufnr}` to split buffer in
 vertical split by buffer number, same as horizontal split using `:split` or
