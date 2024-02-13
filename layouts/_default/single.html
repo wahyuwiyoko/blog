@@ -10,9 +10,7 @@
           <a href="{{ relURL "tags" }}/{{ . | urlize }}">{{ . }}</a>
         {{- end }}
       </div>
-      <br>
     {{ end -}}
-    <a href="{{ site.Params.editPost.url }}{{ path.Join .File.Path }}" target="_blank">{{ site.Params.editPost.text }}</a>
     {{- if .Params.toc }}
       <br><br>
       <details>

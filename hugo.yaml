@@ -5,11 +5,6 @@ disableLiveReload: true
 pluralizeListTitles: false
 enableGitInfo: true
 
-params:
-  editPost:
-    url: https://github.com/wahyuwiyoko/blog/tree/main/content/
-    text: Suggest Changes
-
 taxonomies:
   tag: tags
 
