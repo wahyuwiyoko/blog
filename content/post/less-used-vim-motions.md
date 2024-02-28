@@ -138,6 +138,15 @@ much faster.
 `:copen` to show list available items for quickfix list. `:colder` to see
 older list and `:cnewer` to newer list.
 
+`:e **/*<file-name><Tab>` will show a completion list for matched file name
+recursively. For example, `:e **/*main` and press `Tab` will show matched file
+named `main` in the directories.
+
+`:retab` to replace all sequences of white-space containing a `<Tab>` with new
+strings of white-space using the new `tabstop` value given.
+
+`:make` to build source from compiler. See `:help :compiler` for more details.
+
 ## Others
 
 `i` for "inside" and `a` for "around" that used to combine with
