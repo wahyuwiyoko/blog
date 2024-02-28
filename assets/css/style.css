@@ -1,40 +1,23 @@
 :root {
-  --background: #faf4ed;
-  --text: #3b3852;
-  --primary: #fffaf3;
-  --secondary: #f2e9e1;
-  --accent: #183f4e;
+  --foreground: #575279;
+  --background: #fffaf3;
   --outline: #cecacd;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --foreground: #e0def4;
     --background: #191724;
-    --text: #e0def4;
-    --primary: #1f1d2e;
-    --secondary: #26233a;
-    --accent: #a0cdde;
     --outline: #524f67;
   }
-
-  img {
-    opacity: 0.8;
-  }
-}
-
-html {
-  color-scheme: light dark;
 }
 
 body {
   margin: 0;
   font: 1rem/1.6 sans-serif;
-  color: var(--text);
+  color: var(--foreground);
   background-color: var(--background);
   letter-spacing: 0.04rem;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
 }
 
 h1 {
@@ -63,9 +46,10 @@ h3[id] {
 }
 
 a {
-  color: var(--accent);
+  color: var(--foreground);
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
+  text-decoration-color: var(--outline);
 }
 
 article h3 a {
@@ -79,11 +63,11 @@ article.tags {
 }
 
 article.tags a {
+  text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
-  padding: 0.5rem 1rem 1rem 1rem;
+  padding: 0.3rem 0.5rem;
   border: 2px solid var(--outline);
-  background-color: var(--primary);
   border-radius: 5px;
 }
 
@@ -96,7 +80,8 @@ article.search {
 
 article.search input {
   border: 2px solid var(--outline);
-  background-color: var(--primary);
+  color: var(--foreground);
+  background-color: var(--background);
   padding: 0.5rem;
   border-radius: 5px;
   outline: none;
@@ -104,7 +89,7 @@ article.search input {
 
 article.search a {
   font-size: 1rem;
-  color: var(--text);
+  color: var(--foreground);
   border: 2px solid var(--outline);
   padding: 0 1rem;
   border-radius: 5px;
@@ -131,7 +116,6 @@ article p,
 img {
   max-width: 100%;
   display: block;
-  border-radius: 5px;
   margin: auto;
 }
 
@@ -143,12 +127,8 @@ table {
 
 td,
 th {
-  border: 1px solid var(--outline);
+  border: 2px solid var(--outline);
   padding: 0.5rem 1.5rem;
-}
-
-tr:nth-child(even) {
-  background-color: var(--secondary);
 }
 
 ul {
@@ -166,7 +146,6 @@ main {
   flex-grow: 1;
   align-items: center;
   margin: auto;
-  border-block: 1px solid var(--outline);
 }
 
 section {
@@ -191,9 +170,9 @@ section.more li {
 }
 
 .content .tags a {
-  padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
   border: 2px solid var(--outline);
-  background-color: var(--primary);
   border-radius: 5px;
 }
 
@@ -206,15 +185,13 @@ section.more li {
 
 .paginator a {
   text-decoration: none;
-  padding: 0.6rem 1.2rem;
-  background-color: var(--secondary);
-  color: var(--text);
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--outline);
   border-radius: 5px;
 }
 
 details {
   border: 2px solid var(--outline);
-  background-color: var(--primary);
   border-radius: 5px;
   padding: 1rem;
 }
@@ -258,7 +235,7 @@ pre:not(.highlight pre) {
 }
 
 code:not(.highlight code, pre code) {
-  background-color: var(--secondary);
+  border: 1px solid var(--outline);
   padding: 0.1rem 0.3rem;
   border-radius: 3px;
 }
