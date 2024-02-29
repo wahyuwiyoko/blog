@@ -1,9 +1,15 @@
 {{ define "main" }}
   <section class="content">
     <h1>{{ .Title }}</h1>
-    <p>{{ .Description }}</p>
     <p>Published: {{ .Date.Format "January 2, 2006"}}</p>
     <p>Updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
+    {{- if .Params.toc }}
+      <details>
+        <summary>Table of Contents</summary>
+        {{ .TableOfContents }}
+      </details>
+    {{- end }}
+    {{ .Content -}}
     {{- if .Params.tags }}
       <div class="tags">
         {{- range .Params.tags }}
@@ -11,14 +17,5 @@
         {{- end }}
       </div>
     {{ end -}}
-    {{- if .Params.toc }}
-      <br>
-      <details>
-        <summary>Table of Contents</summary>
-        {{ .TableOfContents }}
-      </details>
-    {{- end }}
-    <hr class="divider">
-    {{ .Content -}}
   </section>
 {{ end }}
