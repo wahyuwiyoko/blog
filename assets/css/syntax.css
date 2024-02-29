@@ -38,8 +38,6 @@
 .chroma {
   color: var(--text);
   background-color: var(--base);
-  margin: 0;
-  padding: 1rem;
 }
 
 /* Other */

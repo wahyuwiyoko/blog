@@ -1,9 +1,10 @@
 {{ define "main" }}
-  <section class="content">
+  <article class="content">
     <header>
       <h1>{{ .Title }}</h1>
       <p>Published: {{ .Date.Format "January 2, 2006"}}</p>
       <p>Updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
+
       {{- if .Params.toc }}
         <details>
           <summary>Table of Contents</summary>
@@ -12,16 +13,14 @@
       {{- end }}
     </header>
 
-    <article>
-      {{ .Content -}}
+    {{ .Content -}}
 
-      {{- if .Params.tags }}
-        <div class="tags">
-          {{- range .Params.tags }}
-            <a href="{{ relURL "tags" }}/{{ . | urlize }}">{{ . }}</a>
-          {{- end }}
-        </div>
-      {{ end -}}
-    </article>
-  </section>
+    {{- if .Params.tags }}
+      <footer class="tags">
+        {{- range .Params.tags }}
+          <a href="{{ relURL "tags" }}/{{ . | urlize }}">{{ . }}</a>
+        {{- end }}
+      </footer>
+    {{ end -}}
+  </article>
 {{ end }}
