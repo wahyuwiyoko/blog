@@ -1,21 +1,27 @@
 {{ define "main" }}
   <section class="content">
-    <h1>{{ .Title }}</h1>
-    <p>Published: {{ .Date.Format "January 2, 2006"}}</p>
-    <p>Updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
-    {{- if .Params.toc }}
-      <details>
-        <summary>Table of Contents</summary>
-        {{ .TableOfContents }}
-      </details>
-    {{- end }}
-    {{ .Content -}}
-    {{- if .Params.tags }}
-      <div class="tags">
-        {{- range .Params.tags }}
-          <a href="{{ relURL "tags" }}/{{ . | urlize }}">{{ . }}</a>
-        {{- end }}
-      </div>
-    {{ end -}}
+    <header>
+      <h1>{{ .Title }}</h1>
+      <p>Published: {{ .Date.Format "January 2, 2006"}}</p>
+      <p>Updated: {{ .Lastmod.Format "January 2, 2006"}}</p>
+      {{- if .Params.toc }}
+        <details>
+          <summary>Table of Contents</summary>
+          {{ .TableOfContents }}
+        </details>
+      {{- end }}
+    </header>
+
+    <article>
+      {{ .Content -}}
+
+      {{- if .Params.tags }}
+        <div class="tags">
+          {{- range .Params.tags }}
+            <a href="{{ relURL "tags" }}/{{ . | urlize }}">{{ . }}</a>
+          {{- end }}
+        </div>
+      {{ end -}}
+    </article>
   </section>
 {{ end }}

@@ -71,19 +71,16 @@ article.tags a {
   border-radius: 5px;
 }
 
-header {
-  padding: 1.5rem 0;
-}
-
-nav:not(#TableOfContents) {
+nav:not(#TableOfContents) ul {
+  list-style-type: none;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: 1.5rem 2rem;
+  gap: 1.5rem;
+  padding: 0;
 }
 
 nav:not(#TableOfContents) a,
-article p,
+.posts p,
 .paginator a {
   font-weight: 500;
 }
@@ -118,8 +115,6 @@ main {
   width: min(60ch, 100% - 3rem);
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  align-items: center;
   margin: auto;
 }
 
@@ -128,14 +123,10 @@ section {
   margin-block: 3rem;
 }
 
-section:not(section.content, section.more) {
+section:not(section.content) {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
-}
-
-section.more li {
-  padding: 0.5rem 0;
 }
 
 .content .tags {
@@ -180,10 +171,6 @@ hr {
   margin-block: 2.5rem;
 }
 
-hr.divider {
-  margin-top: 1.5rem;
-}
-
 code {
   font: 0.9rem monospace;
 }
@@ -217,16 +204,4 @@ code:not(.highlight code, pre code) {
 
 .not-found {
   text-align: center;
-}
-
-@media (max-width: 640px) {
-  .mobile-hide {
-    display: none;
-  }
-}
-
-@media (min-width: 640px) {
-  .mobile-show {
-    display: none;
-  }
 }
