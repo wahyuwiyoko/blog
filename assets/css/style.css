@@ -71,31 +71,6 @@ article.tags a {
   border-radius: 5px;
 }
 
-article.search {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1rem;
-}
-
-article.search input {
-  border: 2px solid var(--outline);
-  color: var(--foreground);
-  background-color: var(--background);
-  padding: 0.5rem;
-  border-radius: 5px;
-  outline: none;
-}
-
-article.search a {
-  font-size: 1rem;
-  color: var(--foreground);
-  border: 2px solid var(--outline);
-  padding: 0 1rem;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
 header {
   padding: 1.5rem 0;
 }
