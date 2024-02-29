@@ -1,6 +1,6 @@
 {{ define "main" }}
   <section>
-    <h2 class="category">{{ .Title }}</h2>
+    <h2>{{ .Title }}</h2>
     {{- range .Paginator.Pages }}
       <article>
         <h3><a href="{{ .Permalink | relURL }}">{{ .Title }}</a></h3>
