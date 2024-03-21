@@ -46,7 +46,7 @@ with value 1 (true), because it's disabled by default (0 or false).
 Now turn it on using the `xinput set-prop` command:
 
 ```sh
-xinput set-prop 11 "libinput Tapping Enabled" 2
+xinput set-prop 11 "libinput Tapping Enabled" 1
 ```
 
 ## Wayland
