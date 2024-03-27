@@ -138,31 +138,16 @@ the [documentation](https://docs.github.com/en/authentication).
 Most of the software that I used are terminal and command line based. It's
 customizable with a configuration file rather than GUI software.
 
-### Terminal Emulator
-
-[Alacritty](https://alacritty.org/), the terminal emulator based on Rust, and
-its most people used.
-
-### Text Editor
-
-[Neovim](https://neovim.io/), the keyboard-centric text editor that is
-customizable with Lua language and have tons of useful plugins.
-
 ### Development Environment
 
-- [PostgreSQL](https://www.postgresql.org/), a database for many applications.
-- [Go](https://go.dev/), I may be want to create a command line program with Go.
-- [Lua](https://www.lua.org/), just for configure my Neovim.
+- [Neovim](https://neovim.io/), a keyboard-centric text editor.
+- [Alacritty](https://alacritty.org/), a simple and fast terminal emulator.
+- [tmux](https://tmux.github.io/), a terminal multiplexer.
+- [Go](https://go.dev/), a simple and fast programming language.
 - [Bun](https://bun.sh/) for JavaScript.
+- [PostgreSQL](https://www.postgresql.org/), a database for many applications.
 - [Docker](https://www.docker.com/), I'm not exploring much yet with Docker.
-- [ngrok](https://ngrok.com/) for local tunneling.
 - [Hurl](https://hurl.dev/) for API client.
-- [Hugo](https://gohugo.io/) for this blog.
-
-### Multimedia Player
-
-[mpv](https://mpv.io/) for video player and
-[cmus](https://cmus.github.io/) for music player.
 
 ### Office Suite
 
@@ -175,18 +160,13 @@ The UI are similar to MS Office and it's open source.
 
 - [Zathura](https://git.pwmt.org/pwmt/zathura) for PDF viewer.
 - [pass](https://www.passwordstore.org/) for password manager.
-- [Newsboat](https://newsboat.org/) for reading news.
+- [mpv](https://mpv.io/) for video player.
 - [ripgrep](https://github.com/BurntSushi/ripgrep), an alternative to `grep`.
 - [fzf](https://github.com/junegunn/fzf), a general-purpose fuzzy finder.
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp), a YouTube videos downloader.
 - [fd-find](https://github.com/sharkdp/fd), an alternative to `find`.
-- [shellcheck](https://www.shellcheck.net/), a linter for shell script.
 - [exiftool](https://exiftool.org/), a metadata viewer.
-- [trash-cli](https://github.com/andreafrancia/trash-cli), a trashcan utility.
-- [tmux](https://tmux.github.io/), a terminal multiplexer.
 - [nsxiv](https://codeberg.org/nsxiv/nsxiv) (X11)
   and [swayimg](https://github.com/artemsen/swayimg) (Wayland) for image viewer
-- [lf](https://github.com/gokcehan/lf) for file manager.
 - [maim](https://github.com/naelstrof/maim) (X11)
   and [grimshot](https://www.mankier.com/1/grimshot) (Wayland) for screenshoter.
 
